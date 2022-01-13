@@ -1,9 +1,10 @@
 import React, {Fragment, useEffect,useState} from 'react';
-import axios from 'axios';
 import {Activity} from '../models/Activity';
-import { Container, Header, List } from 'semantic-ui-react';
+import { Container } from 'semantic-ui-react';
 import NavBar from './navbar';
 import ActivityDashboard from '../../feature/activities/dashboard/ActivityDashboard';
+import agent from '../api/crud';
+import LoadingComponent from './LoadingComponent';
 
 
 
@@ -11,14 +12,20 @@ function App() {
    const [activities, setActivities]= useState<Activity[]>([]);
    const [selectedActivity,setSelectedActivity] = useState<Activity | undefined>(undefined);
    const [editMode,setEditMode] = useState(false);
+   const [loading,setLoading]=useState(true);
+   const [submitting,setSubmitting]=useState(false);
 
  
     useEffect(()=>{
-
-      axios.get<Activity[]>('http://localhost:5642/api/Activity')
-           .then((response:any)=>{debugger;
-         
-                   setActivities(response.data?.data);     
+      // axios.get<Activity[]>('http://localhost:5642/api/Activity')
+      agent.Activities.list().then((response:any)=>{debugger;
+        let activities:Activity[] =[];
+              response.data.forEach((activity:any) =>{
+                  activity.date=activity.date.split('T')[0];
+                  activities.push(activity);
+              })
+              setActivities(response.data);   
+              setLoading(false);  
            })
 
     },[])
@@ -41,20 +48,39 @@ function App() {
     }
 
     function handleDeleteActivity(id:string){
-      setActivities([...activities.filter(x=>x.id !== id)]);
+      setSubmitting(true);
+      agent.Activities.delete(id).then((response)=>{
+         setActivities([...activities.filter(x=>x.id !== id)]);
+         setSubmitting(false);
+      })
+     
     }
 
     function handleCreateorEditActivity(activity:Activity){
-      debugger;
-     
-        var { v4: uuidv4 } = require('uuid');
+    setSubmitting(true);
+    if(activity.id){
+      agent.Activities.update(activity)
+            .then((response)=> {
+                let { v4: uuidv4 } = require('uuid');
+                setActivities([...activities.filter(x=>x.id !== activity.id),activity]);
+                setSubmitting(false);
+            })
+ 
+    }else{
+      let { v4: uuidv4 } = require('uuid');
+      activity.id=uuidv4();
+      agent.Activities.create(activity).then(()=>{
+        setActivities([...activities,activity]);
 
-      //const uuidv1 = require('uuid/v1');
-      activity.id
-       ? setActivities([...activities.filter(x=>x.id !== activity.id),activity])
-       : setActivities([...activities,{...activity,id:uuidv4()}]);
-       
+        setSelectedActivity(activity);
+                setEditMode(false);
+                setSubmitting(false);
+      })
+
     }
+  }
+
+  if(loading) return <LoadingComponent content='Loading app' />
 
   return (
     <Fragment>
@@ -70,7 +96,7 @@ function App() {
                   closeForm={handleFormClose}
                   createOrEdit={handleCreateorEditActivity}
                   deleteActivity={handleDeleteActivity}
-                  
+                  submitting={submitting}
                   />
           </Container>
     </Fragment>

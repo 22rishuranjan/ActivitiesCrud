@@ -1,0 +1,31 @@
+D:\SOTI\Persistence\bin\Debug\netcoreapp3.1\Persistence.deps.json
+D:\SOTI\Persistence\bin\Debug\netcoreapp3.1\Persistence.runtimeconfig.json
+D:\SOTI\Persistence\bin\Debug\netcoreapp3.1\Persistence.runtimeconfig.dev.json
+D:\SOTI\Persistence\bin\Debug\netcoreapp3.1\Persistence.dll
+D:\SOTI\Persistence\bin\Debug\netcoreapp3.1\Persistence.pdb
+D:\SOTI\Persistence\bin\Debug\netcoreapp3.1\Domain.dll
+D:\SOTI\Persistence\bin\Debug\netcoreapp3.1\Domain.pdb
+D:\SOTI\Persistence\obj\Debug\netcoreapp3.1\Persistence.AssemblyInfoInputs.cache
+D:\SOTI\Persistence\obj\Debug\netcoreapp3.1\Persistence.AssemblyInfo.cs
+D:\SOTI\Persistence\obj\Debug\netcoreapp3.1\Persistence.csproj.CoreCompileInputs.cache
+D:\SOTI\Persistence\obj\Debug\netcoreapp3.1\Persistence.csproj.CopyComplete
+D:\SOTI\Persistence\obj\Debug\netcoreapp3.1\Persistence.dll
+D:\SOTI\Persistence\obj\Debug\netcoreapp3.1\Persistence.pdb
+D:\SOTI\Persistence\obj\Debug\netcoreapp3.1\Persistence.genruntimeconfig.cache
+D:\SOTI\Persistence\obj\Debug\netcoreapp3.1\Persistence.csproj.AssemblyReference.cache
+D:\GL Laptop\GL-LAPTOP\SOTI\Persistence\bin\Debug\netcoreapp3.1\Persistence.deps.json
+D:\GL Laptop\GL-LAPTOP\SOTI\Persistence\bin\Debug\netcoreapp3.1\Persistence.runtimeconfig.json
+D:\GL Laptop\GL-LAPTOP\SOTI\Persistence\bin\Debug\netcoreapp3.1\Persistence.runtimeconfig.dev.json
+D:\GL Laptop\GL-LAPTOP\SOTI\Persistence\bin\Debug\netcoreapp3.1\Persistence.dll
+D:\GL Laptop\GL-LAPTOP\SOTI\Persistence\bin\Debug\netcoreapp3.1\Persistence.pdb
+D:\GL Laptop\GL-LAPTOP\SOTI\Persistence\bin\Debug\netcoreapp3.1\Domain.dll
+D:\GL Laptop\GL-LAPTOP\SOTI\Persistence\bin\Debug\netcoreapp3.1\Domain.pdb
+D:\GL Laptop\GL-LAPTOP\SOTI\Persistence\obj\Debug\netcoreapp3.1\Persistence.csproj.AssemblyReference.cache
+D:\GL Laptop\GL-LAPTOP\SOTI\Persistence\obj\Debug\netcoreapp3.1\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+D:\GL Laptop\GL-LAPTOP\SOTI\Persistence\obj\Debug\netcoreapp3.1\Persistence.AssemblyInfoInputs.cache
+D:\GL Laptop\GL-LAPTOP\SOTI\Persistence\obj\Debug\netcoreapp3.1\Persistence.AssemblyInfo.cs
+D:\GL Laptop\GL-LAPTOP\SOTI\Persistence\obj\Debug\netcoreapp3.1\Persistence.csproj.CoreCompileInputs.cache
+D:\GL Laptop\GL-LAPTOP\SOTI\Persistence\obj\Debug\netcoreapp3.1\Persistence.csproj.CopyComplete
+D:\GL Laptop\GL-LAPTOP\SOTI\Persistence\obj\Debug\netcoreapp3.1\Persistence.dll
+D:\GL Laptop\GL-LAPTOP\SOTI\Persistence\obj\Debug\netcoreapp3.1\Persistence.pdb
+D:\GL Laptop\GL-LAPTOP\SOTI\Persistence\obj\Debug\netcoreapp3.1\Persistence.genruntimeconfig.cache

@@ -1,0 +1,19 @@
+D:\SOTI\Domain\bin\Debug\netcoreapp3.1\Domain.deps.json
+D:\SOTI\Domain\bin\Debug\netcoreapp3.1\Domain.dll
+D:\SOTI\Domain\bin\Debug\netcoreapp3.1\Domain.pdb
+D:\SOTI\Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfoInputs.cache
+D:\SOTI\Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfo.cs
+D:\SOTI\Domain\obj\Debug\netcoreapp3.1\Domain.csproj.CoreCompileInputs.cache
+D:\SOTI\Domain\obj\Debug\netcoreapp3.1\Domain.dll
+D:\SOTI\Domain\obj\Debug\netcoreapp3.1\Domain.pdb
+D:\SOTI\Domain\obj\Debug\netcoreapp3.1\Domain.csproj.AssemblyReference.cache
+D:\GL Laptop\GL-LAPTOP\SOTI\Domain\bin\Debug\netcoreapp3.1\Domain.deps.json
+D:\GL Laptop\GL-LAPTOP\SOTI\Domain\bin\Debug\netcoreapp3.1\Domain.dll
+D:\GL Laptop\GL-LAPTOP\SOTI\Domain\bin\Debug\netcoreapp3.1\Domain.pdb
+D:\GL Laptop\GL-LAPTOP\SOTI\Domain\obj\Debug\netcoreapp3.1\Domain.csproj.AssemblyReference.cache
+D:\GL Laptop\GL-LAPTOP\SOTI\Domain\obj\Debug\netcoreapp3.1\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\GL Laptop\GL-LAPTOP\SOTI\Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfoInputs.cache
+D:\GL Laptop\GL-LAPTOP\SOTI\Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfo.cs
+D:\GL Laptop\GL-LAPTOP\SOTI\Domain\obj\Debug\netcoreapp3.1\Domain.csproj.CoreCompileInputs.cache
+D:\GL Laptop\GL-LAPTOP\SOTI\Domain\obj\Debug\netcoreapp3.1\Domain.dll
+D:\GL Laptop\GL-LAPTOP\SOTI\Domain\obj\Debug\netcoreapp3.1\Domain.pdb

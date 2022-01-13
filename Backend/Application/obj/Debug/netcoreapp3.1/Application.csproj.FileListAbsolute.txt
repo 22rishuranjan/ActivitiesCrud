@@ -1,0 +1,29 @@
+D:\SOTI\Application\bin\Debug\netcoreapp3.1\Application.deps.json
+D:\SOTI\Application\bin\Debug\netcoreapp3.1\Application.dll
+D:\SOTI\Application\bin\Debug\netcoreapp3.1\Application.pdb
+D:\SOTI\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfoInputs.cache
+D:\SOTI\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfo.cs
+D:\SOTI\Application\obj\Debug\netcoreapp3.1\Application.csproj.CoreCompileInputs.cache
+D:\SOTI\Application\obj\Debug\netcoreapp3.1\Application.dll
+D:\SOTI\Application\obj\Debug\netcoreapp3.1\Application.pdb
+D:\SOTI\Application\bin\Debug\netcoreapp3.1\Domain.dll
+D:\SOTI\Application\bin\Debug\netcoreapp3.1\Persistence.dll
+D:\SOTI\Application\bin\Debug\netcoreapp3.1\Domain.pdb
+D:\SOTI\Application\bin\Debug\netcoreapp3.1\Persistence.pdb
+D:\SOTI\Application\obj\Debug\netcoreapp3.1\Application.csproj.CopyComplete
+D:\SOTI\Application\obj\Debug\netcoreapp3.1\Application.csproj.AssemblyReference.cache
+D:\GL Laptop\GL-LAPTOP\SOTI\Application\bin\Debug\netcoreapp3.1\Application.deps.json
+D:\GL Laptop\GL-LAPTOP\SOTI\Application\bin\Debug\netcoreapp3.1\Application.dll
+D:\GL Laptop\GL-LAPTOP\SOTI\Application\bin\Debug\netcoreapp3.1\Application.pdb
+D:\GL Laptop\GL-LAPTOP\SOTI\Application\bin\Debug\netcoreapp3.1\Domain.dll
+D:\GL Laptop\GL-LAPTOP\SOTI\Application\bin\Debug\netcoreapp3.1\Persistence.dll
+D:\GL Laptop\GL-LAPTOP\SOTI\Application\bin\Debug\netcoreapp3.1\Domain.pdb
+D:\GL Laptop\GL-LAPTOP\SOTI\Application\bin\Debug\netcoreapp3.1\Persistence.pdb
+D:\GL Laptop\GL-LAPTOP\SOTI\Application\obj\Debug\netcoreapp3.1\Application.csproj.AssemblyReference.cache
+D:\GL Laptop\GL-LAPTOP\SOTI\Application\obj\Debug\netcoreapp3.1\Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\GL Laptop\GL-LAPTOP\SOTI\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfoInputs.cache
+D:\GL Laptop\GL-LAPTOP\SOTI\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfo.cs
+D:\GL Laptop\GL-LAPTOP\SOTI\Application\obj\Debug\netcoreapp3.1\Application.csproj.CoreCompileInputs.cache
+D:\GL Laptop\GL-LAPTOP\SOTI\Application\obj\Debug\netcoreapp3.1\Application.csproj.CopyComplete
+D:\GL Laptop\GL-LAPTOP\SOTI\Application\obj\Debug\netcoreapp3.1\Application.dll
+D:\GL Laptop\GL-LAPTOP\SOTI\Application\obj\Debug\netcoreapp3.1\Application.pdb
