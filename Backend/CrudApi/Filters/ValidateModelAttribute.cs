@@ -12,7 +12,7 @@ namespace CrudApi.Filters
     {
         public override void OnActionExecuted(ActionExecutedContext context)
         {
-            string test = "just random some code;";
+         
         }
 
         public override void OnActionExecuting(ActionExecutingContext context)

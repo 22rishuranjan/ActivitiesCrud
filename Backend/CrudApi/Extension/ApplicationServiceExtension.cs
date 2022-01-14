@@ -20,25 +20,13 @@ namespace CrudApi.Extension
         public static IServiceCollection ConfigureIoC(this IServiceCollection services, IConfiguration config) {
 
 
-            //--- methods to add xml and json response from api
-            //method 1
-            //services.AddControllers(options =>
-            //{
-            //    options.OutputFormatters.Add(new XmlSerializerOutputFormatter());
-            //});
-
-            //method 2
-            //services.AddControllers(options =>
-            //{
-            //    options.RespectBrowserAcceptHeader = false; // false by default
-            //    options.OutputFormatters.Add(new XmlDataContractSerializerOutputFormatter());
-            //});
-
-            //method 3
+            //to get xml and json response from api
             services.AddControllers()
                 .AddNewtonsoftJson()
                 .AddXmlSerializerFormatters();
+            
 
+            //setting up db for efcore
             services.AddDbContext<DataContext>(options =>
               options.UseSqlServer(config.GetConnectionString("dev"))
               ,ServiceLifetime.Transient
@@ -52,16 +40,7 @@ namespace CrudApi.Extension
 
             //load general configuration from appsettings.json
             services.Configure<IpRateLimitOptions>(config.GetSection("IpRateLimiting"));
-
-            //load ip rules from appsettings.json
-            //not required now
-            //services.Configure<IpRateLimitPolicies>(config.GetSection("IpRateLimitPolicies"));
-
-            // inject counter and rules stores
-            services.AddInMemoryRateLimiting();
-            //services.AddDistributedRateLimiting<AsyncKeyLockProcessingStrategy>();
-            //services.AddDistributedRateLimiting<RedisProcessingStrategy>();
-            //services.AddRedisRateLimiting();
+           
 
             // configuration (resolvers, counter key builders)
             services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>();

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GL Laptop\\GL-LAPTOP\\SOTI\\CrudApi.UnitTest\\CrudApi.UnitTest.csproj": {}
+    "D:\\Rishu Code\\KroneTechChallenge\\ActivitiesCrud\\Backend\\CrudApi.UnitTest\\CrudApi.UnitTest.csproj": {}
   },
   "projects": {
-    "D:\\GL Laptop\\GL-LAPTOP\\SOTI\\CrudApi.UnitTest\\CrudApi.UnitTest.csproj": {
+    "D:\\Rishu Code\\KroneTechChallenge\\ActivitiesCrud\\Backend\\CrudApi.UnitTest\\CrudApi.UnitTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GL Laptop\\GL-LAPTOP\\SOTI\\CrudApi.UnitTest\\CrudApi.UnitTest.csproj",
+        "projectUniqueName": "D:\\Rishu Code\\KroneTechChallenge\\ActivitiesCrud\\Backend\\CrudApi.UnitTest\\CrudApi.UnitTest.csproj",
         "projectName": "CrudApi.UnitTest",
-        "projectPath": "D:\\GL Laptop\\GL-LAPTOP\\SOTI\\CrudApi.UnitTest\\CrudApi.UnitTest.csproj",
+        "projectPath": "D:\\Rishu Code\\KroneTechChallenge\\ActivitiesCrud\\Backend\\CrudApi.UnitTest\\CrudApi.UnitTest.csproj",
         "packagesPath": "C:\\Users\\Rishu\\.nuget\\packages\\",
-        "outputPath": "D:\\GL Laptop\\GL-LAPTOP\\SOTI\\CrudApi.UnitTest\\obj\\",
+        "outputPath": "D:\\Rishu Code\\KroneTechChallenge\\ActivitiesCrud\\Backend\\CrudApi.UnitTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rishu\\AppData\\Roaming\\NuGet\\NuGet.Config",

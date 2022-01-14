@@ -5,6 +5,9 @@ import NavBar from './navbar';
 import ActivityDashboard from '../../feature/activities/dashboard/ActivityDashboard';
 import agent from '../api/crud';
 import LoadingComponent from './LoadingComponent';
+import HomePage from '../../feature/activities/home/homepage';
+import { Route, Switch, useLocation } from 'react-router-dom';
+import ActivityForm from '../../feature/activities/form/ActivityForm';
 
 
 
@@ -31,11 +34,13 @@ function App() {
     },[])
 
     function handleSelectActivity(id:string){
+         handleFormClose();
       setSelectedActivity(activities.find(x=>x.id === id));
     }
 
     function handleCancelSelectActivity(){
       setSelectedActivity(undefined);
+      handleFormClose();
     }
 
     function handleFormOpen(id?:string){
@@ -72,7 +77,7 @@ function App() {
       agent.Activities.create(activity).then(()=>{
         setActivities([...activities,activity]);
 
-        setSelectedActivity(activity);
+                setSelectedActivity(activity);
                 setEditMode(false);
                 setSubmitting(false);
       })
@@ -86,7 +91,11 @@ function App() {
     <Fragment>
       <NavBar openForm={handleFormOpen}/>
       <Container style={{marginTop:'80px'}}>
-             <ActivityDashboard 
+          <Route exact path='/' component={HomePage} />
+        
+          <Route path='/createActivity' component={ActivityForm} />
+          <Route path='/activities' component={()=>
+          <ActivityDashboard 
                   activities={activities}
                   selectedActivity={selectedActivity}
                   selectActivity={handleSelectActivity}
@@ -97,6 +106,7 @@ function App() {
                   createOrEdit={handleCreateorEditActivity}
                   deleteActivity={handleDeleteActivity}
                   submitting={submitting}
+                  />}
                   />
           </Container>
     </Fragment>

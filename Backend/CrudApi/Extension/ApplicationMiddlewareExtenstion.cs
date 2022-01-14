@@ -19,7 +19,7 @@ namespace CrudApi.Extension
 
             app.UseRouting();
             app.UseCors("CorsPolicy");
-            app.UseIpRateLimiting();
+            //app.UseIpRateLimiting();
 
          
             app.UseEndpoints(endpoints =>

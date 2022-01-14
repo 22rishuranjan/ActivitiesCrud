@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sZf7OMNFtJvH+wSfE5k4WopLh2IobjLO/CiY7djDKH5FEsXHazEq/Teyn0RuMtO2rdmQgsZ2t9GaAWyQspfzOA==",
+  "dgSpecHash": "LVJkUQwMVHXbJTRwK/G04jKfALJLsZc0eyOOMEeJOt29jhzUWrYxkkVnH9n4WSugBnykldZnERe8LyWCCQc5kQ==",
   "success": true,
-  "projectFilePath": "D:\\GL Laptop\\GL-LAPTOP\\SOTI\\Persistence\\Persistence.csproj",
+  "projectFilePath": "D:\\Rishu Code\\KroneTechChallenge\\ActivitiesCrud\\Backend\\Persistence\\Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rishu\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Rishu\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

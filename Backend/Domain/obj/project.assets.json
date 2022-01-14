@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GL Laptop\\GL-LAPTOP\\SOTI\\Domain\\Domain.csproj",
+      "projectUniqueName": "D:\\Rishu Code\\KroneTechChallenge\\ActivitiesCrud\\Backend\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "D:\\GL Laptop\\GL-LAPTOP\\SOTI\\Domain\\Domain.csproj",
+      "projectPath": "D:\\Rishu Code\\KroneTechChallenge\\ActivitiesCrud\\Backend\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\Rishu\\.nuget\\packages\\",
-      "outputPath": "D:\\GL Laptop\\GL-LAPTOP\\SOTI\\Domain\\obj\\",
+      "outputPath": "D:\\Rishu Code\\KroneTechChallenge\\ActivitiesCrud\\Backend\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rishu\\AppData\\Roaming\\NuGet\\NuGet.Config",

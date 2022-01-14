@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i+LrS71WfMKDr7rqgtNFxYsfHW1dyrQ/zruCDThammCIHceLpMTTHQGwhcbZzR/WUYzYu7IheWMB1j5t/Uprqw==",
+  "dgSpecHash": "UkARVS0ZzOIzaLqTeaR1iswqAkGox4W9Vg7Z+0ImFDuIUjvwzWwp5gcvypDCjdnCmKVXhiVWBZuRmFwPfWgnyA==",
   "success": true,
-  "projectFilePath": "D:\\GL Laptop\\GL-LAPTOP\\SOTI\\CrudApi.UnitTest\\CrudApi.UnitTest.csproj",
+  "projectFilePath": "D:\\Rishu Code\\KroneTechChallenge\\ActivitiesCrud\\Backend\\CrudApi.UnitTest\\CrudApi.UnitTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rishu\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
     "C:\\Users\\Rishu\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",

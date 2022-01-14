@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "d47RNDXvsEgkMm+uUT2TYfX4MMwmT0r4xv6yvJI3K2kEZfBq/RVtvsq8yflrR4QqQn+LjwjXRpzb2WsCr/IXEQ==",
+  "dgSpecHash": "yEJTpnyyFGYVX1WlsUkqNAfvJ4KfSAAcNu2Ei/GEiJnUE3c139NiEUnlhgEjO/XZsSvGBIwqbJmjdWmevAA2XA==",
   "success": true,
-  "projectFilePath": "D:\\GL Laptop\\GL-LAPTOP\\SOTI\\CrudApi\\CrudApi.csproj",
+  "projectFilePath": "D:\\Rishu Code\\KroneTechChallenge\\ActivitiesCrud\\Backend\\CrudApi\\CrudApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rishu\\.nuget\\packages\\aspnetcoreratelimit\\4.0.1\\aspnetcoreratelimit.4.0.1.nupkg.sha512",
     "C:\\Users\\Rishu\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
@@ -10,7 +10,8 @@
     "C:\\Users\\Rishu\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Rishu\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
     "C:\\Users\\Rishu\\.nuget\\packages\\microsoft.aspnet.webapi.core\\5.2.7\\microsoft.aspnet.webapi.core.5.2.7.nupkg.sha512",
-    "C:\\Users\\Rishu\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.1\\microsoft.aspnetcore.jsonpatch.3.1.1.nupkg.sha512",
+    "C:\\Users\\Rishu\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.0\\microsoft.aspnetcore.authentication.jwtbearer.3.1.0.nupkg.sha512",
+    "C:\\Users\\Rishu\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\6.0.1\\microsoft.aspnetcore.jsonpatch.6.0.1.nupkg.sha512",
     "C:\\Users\\Rishu\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.1\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.1.nupkg.sha512",
     "C:\\Users\\Rishu\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Rishu\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

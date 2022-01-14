@@ -1,6 +1,8 @@
-﻿using Application.Interface;
+﻿using Application.DTO;
+using Application.Interface;
 using AutoMapper;
 using Domain;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
 using System;
@@ -25,22 +27,22 @@ namespace Application.Service
 
         }
 
-        public async Task<ApiResponse<List<Activity>>> AddActivity(Activity act)
+        public async Task<ApiResponse<List<GetActivityDto>>> AddActivity(AddActivityDto act)
         {
-            ApiResponse<List<Activity>> res = new ApiResponse<List<Activity>>();
-
-            _context.Add(act);
+            ApiResponse<List<GetActivityDto>> res = new ApiResponse<List<GetActivityDto>>();
+            Activity _act = _mapper.Map<Activity>(act);
+            _context.Add(_act);
             await _context.SaveChangesAsync();
-            res.Data = await _context.Activities.ToListAsync();
+            res.Data = await _context.Activities.Select(c => _mapper.Map<GetActivityDto>(c)).ToListAsync();
             res.Message = "Success: Acivtity added!";
             res.Success = true;
 
             return res;
         }
 
-        public async Task<ApiResponse<Activity>> DeleteActivity(Guid id)
+        public async Task<ApiResponse<GetActivityDto>> DeleteActivity(Guid id)
         {
-            ApiResponse<Activity> res = new ApiResponse<Activity>();
+            ApiResponse<GetActivityDto> res = new ApiResponse<GetActivityDto>();
 
             var act = await _context.Activities.FindAsync(id);
             if (act == null)
@@ -53,7 +55,7 @@ namespace Application.Service
 
             }
 
-            res.Data = act;
+            res.Data = _mapper.Map<GetActivityDto>( act);
             res.Message = "Activity deleted!!";
             res.Success = true;
 
@@ -63,19 +65,19 @@ namespace Application.Service
             return res;
         }
 
-        public async Task<ApiResponse<List<Activity>>> GetActivities()
+        public async Task<ApiResponse<List<GetActivityDto>>> GetActivities()
         {
-            ApiResponse<List<Activity>> res = new ApiResponse<List<Activity>>();
-            res.Data =  await _context.Activities.ToListAsync();
+            ApiResponse<List<GetActivityDto>> res = new ApiResponse<List<GetActivityDto>>();
+            res.Data =  await _context.Activities.Select(c => _mapper.Map<GetActivityDto>(c)).ToListAsync();
             res.Message = "List fectched!!";
             res.Success = true;
 
             return res;
         }
 
-        public async Task<ApiResponse<Activity>> GetActivityById(Guid id)
+        public async Task<ApiResponse<GetActivityDto>> GetActivityById(Guid id)
         {
-            ApiResponse<Activity> res = new ApiResponse<Activity>();
+            ApiResponse<GetActivityDto> res = new ApiResponse<GetActivityDto>();
 
             var act = await _context.Activities.FindAsync(id);
             if (act == null)
@@ -87,38 +89,17 @@ namespace Application.Service
                 return res;
 
             }
-            res.Data = act;
+            res.Data = _mapper.Map<GetActivityDto>(act);
             res.Message = "Activity found!!";
             res.Success = true;
 
             return res;
         }
 
-        public async Task<ApiResponse<Activity>> PatchActivity(Activity act, Guid id)
+       
+        public async Task<ApiResponse<GetActivityDto>> UpdateActivity(UpdateActivityDto act, Guid id)
         {
-            ApiResponse<Activity> res = new ApiResponse<Activity>();
-
-            var _act = await _context.Activities.FindAsync(id);
-            if (act == null)
-            {
-                res.Data = null;
-                res.Message = "Error: Acivtity can not be found!";
-                res.Success = false;
-
-                return res;
-            }
-
-            //_mapper.Map(act, _act);
-            await _context.SaveChangesAsync();
-            res.Data = await _context.Activities.FindAsync(id);
-            res.Message = "Success, Activitity is successfully patched.";
-            res.Success = true;
-            return res;
-        }
-
-        public async Task<ApiResponse<Activity>> UpdateActivity(Activity act, Guid id)
-        {
-            ApiResponse<Activity> res = new ApiResponse<Activity>();
+            ApiResponse<GetActivityDto> res = new ApiResponse<GetActivityDto>();
 
             var _act = await _context.Activities.FindAsync(id);
             if (act == null)
@@ -132,7 +113,7 @@ namespace Application.Service
 
             _mapper.Map(act, _act);
             await _context.SaveChangesAsync();
-            res.Data = await _context.Activities.FindAsync(id);
+            res.Data = _mapper.Map<GetActivityDto>(await _context.Activities.FindAsync(id));
             res.Message = "Success, Activitity is successfully updated.";
             res.Success = true;
             return res;

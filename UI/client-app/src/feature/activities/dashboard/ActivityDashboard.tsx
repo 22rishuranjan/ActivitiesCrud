@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid } from 'semantic-ui-react';
 import {Activity} from '../../../app/models/Activity';
 import ActivityList from '../ActivityList';
-import ActivityDetails from '../deatils/ActivityDetails';
+import ActivityDetails from '../details/ActivityDetails';
 import ActivityForm from '../form/ActivityForm';
 
 interface Props{

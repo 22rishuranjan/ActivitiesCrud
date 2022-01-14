@@ -40,19 +40,19 @@ export default function ActivityForm({activity:selectedActivity,closeForm,create
     const[errorControl,setErrorControl] = useState<string[]>([]);
 
     function handleSubmit(){
-        console.log(activity);
+        setActivity(activity);
         createOrEdit(activity);
     }
 
     function handleInputChange(event:any){
-        debugger;
+       
         const {name,value}=event.target;
         validateControl(name,value);
         setActivity({...activity,[name]:value})
     }
     function validateControl(name:string,value:string){
         if (name=='date') return;
-        if (value.length>3 && !errorControl.includes(name)){
+        if (value.length>3000 && !errorControl.includes(name)){
                 setErrorControl([...errorControl, name]);
                
         }

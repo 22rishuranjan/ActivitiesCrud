@@ -1,4 +1,5 @@
-﻿using Application.Interface;
+﻿using Application.DTO;
+using Application.Interface;
 using CrudApi.Filters;
 using Domain;
 using Microsoft.AspNetCore.Http;
@@ -15,7 +16,7 @@ namespace CrudApi.Controller
     [Route("api/[controller]")]
     [ApiController]
     [ValidateModel]
-    public class ActivityController : ControllerBase
+    public class ActivityController : BaseApiController
     {
 
         private readonly IActivity _activtiy;
@@ -30,68 +31,40 @@ namespace CrudApi.Controller
 
 
         [HttpGet]
-        [ValidateModel]
         public async Task<IActionResult> Activity()
         {
-            return Ok(await _activtiy.GetActivities());
+            return HandleResult(await _activtiy.GetActivities());
         }
 
 
         [HttpGet("{id}")]
         public async Task<IActionResult> Activity(Guid id)
         {
-            return Ok(await _activtiy.GetActivityById(id));
+            return HandleResult(await _activtiy.GetActivityById(id));
         }
 
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteActivity(Guid id)
         {
-            return Ok(await _activtiy.DeleteActivity(id));
+            return HandleResult(await _activtiy.DeleteActivity(id));
         }
 
 
         [HttpPost]
 
-        public async Task<IActionResult> Activity(Activity act)
-        {
-            var contentType = this.Request.ContentType;
-
-            return Ok(await _activtiy.AddActivity(act));
+        public async Task<IActionResult> Activity(AddActivityDto act)
+        {     
+            return HandleResult(await _activtiy.AddActivity(act));
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Activity(Guid id, Activity act)
+        public async Task<IActionResult> Activity(Guid id, UpdateActivityDto act)
         {
-            return Ok(await _activtiy.UpdateActivity(act,id));
+            return HandleResult(await _activtiy.UpdateActivity(act,id));
         }
 
 
-        [HttpPatch("{id}")]
-        public async Task<IActionResult> Activity(Guid id, [FromBody]JsonPatchDocument<Activity> act, [FromServices] DataContext _context)
-        {
-            //return Ok(await _activtiy.PatchActivity(act, id));
-
-            var _act = await _context.Activities.FindAsync(id);
-            if (act == null)
-            {
-                return NotFound();
-            }
-
-            act.ApplyTo(_act, ModelState);
-
-            var model = new
-            {
-                original = _act,
-                patched = act
-            };
-            return Ok(await _activtiy.UpdateActivity(_act, id));
-
-
-
-          //  return Ok(model);
-
-        }
 
     }
 }

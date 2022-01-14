@@ -81,11 +81,26 @@
           "lib/net45/System.Web.Http.dll": {}
         }
       },
-      "Microsoft.AspNetCore.JsonPatch/3.1.1": {
+      "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "5.5.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Microsoft.AspNetCore.JsonPatch/6.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
-          "Newtonsoft.Json": "12.0.2"
+          "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll": {}
@@ -1508,6 +1523,7 @@
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.1",
           "Domain": "1.0.0",
+          "Microsoft.AspNetCore.JsonPatch": "6.0.1",
           "Persistence": "1.0.0"
         },
         "compile": {
@@ -1635,17 +1651,36 @@
         "microsoft.aspnet.webapi.core.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.JsonPatch/3.1.1": {
-      "sha512": "Y2hwnbYzA8nmRH3+eTXtG+HP7rkMSLcqcLh5vfoN/J3zcmYb7vMtRauSDT9GO85JGwk+blNiCDXEou8Dj2TR4g==",
+    "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.0": {
+      "sha512": "Ui/tHIXkUa2daOeHKoHSRE8r0U/i9ar0wAeeUPt3ILidsrXVcq4A7wX9g6AJjVBW6Va0Elw1/JNtyrk+wz5pSg==",
       "type": "package",
-      "path": "microsoft.aspnetcore.jsonpatch/3.1.1",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/3.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.xml",
+        "microsoft.aspnetcore.authentication.jwtbearer.3.1.0.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.jwtbearer.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.JsonPatch/6.0.1": {
+      "sha512": "vLgQbgudEQfGNaGyAvm+jlfLHu5Ynav8/RnhwM0QaKFjVW2crEOGm7tRHHjM5iofF8VZnEYfyvUvyK82dBej1w==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.jsonpatch/6.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.AspNetCore.JsonPatch.dll",
+        "lib/net461/Microsoft.AspNetCore.JsonPatch.xml",
+        "lib/net6.0/Microsoft.AspNetCore.JsonPatch.dll",
+        "lib/net6.0/Microsoft.AspNetCore.JsonPatch.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.xml",
-        "microsoft.aspnetcore.jsonpatch.3.1.1.nupkg.sha512",
+        "microsoft.aspnetcore.jsonpatch.6.0.1.nupkg.sha512",
         "microsoft.aspnetcore.jsonpatch.nuspec"
       ]
     },
@@ -5666,6 +5701,7 @@
       "Application >= 1.0.0",
       "AspNetCoreRateLimit >= 4.0.1",
       "Microsoft.AspNet.WebApi.Core >= 5.2.7",
+      "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.1.0",
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 3.1.1",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.7",
       "Persistence >= 1.0.0"
@@ -5677,11 +5713,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GL Laptop\\GL-LAPTOP\\SOTI\\CrudApi\\CrudApi.csproj",
+      "projectUniqueName": "D:\\Rishu Code\\KroneTechChallenge\\ActivitiesCrud\\Backend\\CrudApi\\CrudApi.csproj",
       "projectName": "CrudApi",
-      "projectPath": "D:\\GL Laptop\\GL-LAPTOP\\SOTI\\CrudApi\\CrudApi.csproj",
+      "projectPath": "D:\\Rishu Code\\KroneTechChallenge\\ActivitiesCrud\\Backend\\CrudApi\\CrudApi.csproj",
       "packagesPath": "C:\\Users\\Rishu\\.nuget\\packages\\",
-      "outputPath": "D:\\GL Laptop\\GL-LAPTOP\\SOTI\\CrudApi\\obj\\",
+      "outputPath": "D:\\Rishu Code\\KroneTechChallenge\\ActivitiesCrud\\Backend\\CrudApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rishu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5698,11 +5734,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\GL Laptop\\GL-LAPTOP\\SOTI\\Application\\Application.csproj": {
-              "projectPath": "D:\\GL Laptop\\GL-LAPTOP\\SOTI\\Application\\Application.csproj"
+            "D:\\Rishu Code\\KroneTechChallenge\\ActivitiesCrud\\Backend\\Application\\Application.csproj": {
+              "projectPath": "D:\\Rishu Code\\KroneTechChallenge\\ActivitiesCrud\\Backend\\Application\\Application.csproj"
             },
-            "D:\\GL Laptop\\GL-LAPTOP\\SOTI\\Persistence\\Persistence.csproj": {
-              "projectPath": "D:\\GL Laptop\\GL-LAPTOP\\SOTI\\Persistence\\Persistence.csproj"
+            "D:\\Rishu Code\\KroneTechChallenge\\ActivitiesCrud\\Backend\\Persistence\\Persistence.csproj": {
+              "projectPath": "D:\\Rishu Code\\KroneTechChallenge\\ActivitiesCrud\\Backend\\Persistence\\Persistence.csproj"
             }
           }
         }
@@ -5724,6 +5760,10 @@
           "Microsoft.AspNet.WebApi.Core": {
             "target": "Package",
             "version": "[5.2.7, )"
+          },
+          "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "target": "Package",
+            "version": "[3.1.0, )"
           },
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
             "target": "Package",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GL Laptop\\GL-LAPTOP\\SOTI\\Persistence\\Persistence.csproj": {}
+    "D:\\Rishu Code\\KroneTechChallenge\\ActivitiesCrud\\Backend\\Persistence\\Persistence.csproj": {}
   },
   "projects": {
-    "D:\\GL Laptop\\GL-LAPTOP\\SOTI\\Domain\\Domain.csproj": {
+    "D:\\Rishu Code\\KroneTechChallenge\\ActivitiesCrud\\Backend\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GL Laptop\\GL-LAPTOP\\SOTI\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\Rishu Code\\KroneTechChallenge\\ActivitiesCrud\\Backend\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\GL Laptop\\GL-LAPTOP\\SOTI\\Domain\\Domain.csproj",
+        "projectPath": "D:\\Rishu Code\\KroneTechChallenge\\ActivitiesCrud\\Backend\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Rishu\\.nuget\\packages\\",
-        "outputPath": "D:\\GL Laptop\\GL-LAPTOP\\SOTI\\Domain\\obj\\",
+        "outputPath": "D:\\Rishu Code\\KroneTechChallenge\\ActivitiesCrud\\Backend\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rishu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -58,14 +58,14 @@
         }
       }
     },
-    "D:\\GL Laptop\\GL-LAPTOP\\SOTI\\Persistence\\Persistence.csproj": {
+    "D:\\Rishu Code\\KroneTechChallenge\\ActivitiesCrud\\Backend\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GL Laptop\\GL-LAPTOP\\SOTI\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "D:\\Rishu Code\\KroneTechChallenge\\ActivitiesCrud\\Backend\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "D:\\GL Laptop\\GL-LAPTOP\\SOTI\\Persistence\\Persistence.csproj",
+        "projectPath": "D:\\Rishu Code\\KroneTechChallenge\\ActivitiesCrud\\Backend\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\Rishu\\.nuget\\packages\\",
-        "outputPath": "D:\\GL Laptop\\GL-LAPTOP\\SOTI\\Persistence\\obj\\",
+        "outputPath": "D:\\Rishu Code\\KroneTechChallenge\\ActivitiesCrud\\Backend\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rishu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -82,8 +82,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\GL Laptop\\GL-LAPTOP\\SOTI\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\GL Laptop\\GL-LAPTOP\\SOTI\\Domain\\Domain.csproj"
+              "D:\\Rishu Code\\KroneTechChallenge\\ActivitiesCrud\\Backend\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\Rishu Code\\KroneTechChallenge\\ActivitiesCrud\\Backend\\Domain\\Domain.csproj"
               }
             }
           }
